@@ -1,0 +1,23 @@
+
+# Especificandos os arquivos que serão ignorados pelo git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.sublime-project
+*.sublime-workspace
+.vscode/
+npm-debug.log*
+
+.idea/
+.sourcemaps/
+.sass-cache/
+.tmp/
+.versions/
+.git/
+# Ambiente virtual = python 3.7
+venv/
