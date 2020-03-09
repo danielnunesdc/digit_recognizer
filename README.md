@@ -20,7 +20,7 @@ Practice Skills
 Project   :octocat:
 ========
 
-**How to build**
+**How to use**
 
 1. Clone the repository `git clone https://github.com/nunesdaniel/digit_recognizer`
 
@@ -30,6 +30,31 @@ Project   :octocat:
 
 3. Run the file `cnn.py`
 
+**Results**
+
+The shape of dataset
+
+![](classes.png)
+
+Data sample
+
+<img width="220" height="220" src="manual.png"></img>
+
+Summary
+
+![](sumario.png)
+
+Results for class
+
+![](https://raw.githubusercontent.com/nunesdaniel/digit_recognizer/master/historico%20de%20epocas.png)
+
+Plots
+
+<img width="920" src="plots.png"></img>
+
+Predictions
+
+![](predicoes.png)
 
 Licence  :page_facing_up:
 =======
