@@ -15,8 +15,8 @@ df_train = pd.read_csv('data/train.csv')
 df_test = pd.read_csv('data/test.csv')
 
 # exibindo os cabeçalhos
-df_train.head()
-df_test.head()
+print(df_train.head())
+print(df_test.head())
 
 # Forma dos dados
 print(f'Forma do conjunto de dados de Treino: {df_train.shape}')
@@ -67,7 +67,7 @@ plt.show()
 
 """
 Diminui a probabilidade de inconsistências mediante a pequenas alterações
-deteminando os valores entre 0 e 1, considerando que a variação de um pixel vai de 0 a 255. 
+deteminando os valores entre 0 e 1, considerando que a variação de um pixel vai de 0 a 255.
 """
 x_train = x_train / 255
 x_test = x_test / 255
