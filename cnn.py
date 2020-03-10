@@ -1,20 +1,14 @@
 
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 from keras.utils import np_utils
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
-from keras.optimizers import Adam, RMSprop
-from keras.preprocessing.image import ImageDataGenerator
-from keras.callbacks import ReduceLROnPlateau, EarlyStopping
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
-from sklearn.model_selection import train_test_split
+from keras.optimizers import RMSprop
+from keras.callbacks import ReduceLROnPlateau
 
-sns.set()
 np.random.seed(2)
 
 df_train = pd.read_csv('data/train.csv')
@@ -153,11 +147,8 @@ for i in range(0, 8):
     plt.margins(x=20, y=20)
     plt.title('Predição: ' + str(predictions[random_num]))
     plt.imshow(img.reshape(28, 28), cmap=plt.get_cmap('gray'))
+
 plt.show()
 
 submission = pd.DataFrame({'ImageID': pd.Series(range(1, 28001)), 'Label': predictions})
 submission.to_csv("results/submission.csv", index=False)
-
-
-
-
