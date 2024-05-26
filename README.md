@@ -63,4 +63,4 @@ This project is under license MIT. For more details visit [LICENSE](LICENSE.md).
 
 ---
 
-By Daniel Nunes :wave: [Site](https://github.com/nunesdaniel)
+By Daniel Nunes :wave: [danielnunesdc](https://github.com/danielnunesdc)
